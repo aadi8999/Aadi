@@ -9,13 +9,7 @@ pipeline {
         SECURITY_GROUP = 'sg-0e32ca3c3ec831e94' 
     }
 
-    stages {
-        stage('Setup AWS CLI') {
-            steps {
-                sh 'sudo apt update'
-                sh 'sudo apt install -y awscli'
-            }
-        }
+    
 
         stage('Launch EC2 Instance') {
             steps {
@@ -31,5 +25,4 @@ pipeline {
                 }
             }
         }
-    }
-}
+    }}
