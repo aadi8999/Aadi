@@ -9,7 +9,7 @@ pipeline {
         SECURITY_GROUP = 'sg-0e32ca3c3ec831e94' 
     }
 
-    
+    stages{
 
         stage('Launch EC2 Instance') {
             steps {
@@ -26,3 +26,4 @@ pipeline {
             }
         }
     }
+}
